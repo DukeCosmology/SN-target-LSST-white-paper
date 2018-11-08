@@ -1,4 +1,7 @@
 \documentclass[11pt]{article}
+
+\usepackage{xspace}
+\usepackage{amsmath} % has \nobreakdash
 \usepackage{graphicx}
 \usepackage[utf8]{inputenc}
 \usepackage{booktabs}
@@ -6,6 +9,8 @@
 \usepackage{aas_macros}
 
 \graphicspath{{./figures/}}
+
+\newcommand{\superk}  {Super\nobreakdash-K\xspace}
 
 \title{Target of Opportunity proposal for locating a core collapse
   supernova in our galaxy triggered by a neutrino supernova alert}
@@ -137,7 +142,7 @@ a supernova explosion.
  Kamiokande experiment, not in real time.
 
 Now, a world-wide network of neutrino detectors including the successor
-to IMB and Kamiokande, Super-Kamiokande await the neutrinos from a
+to IMB and Kamiokande, Super-Kamiokande (\superk) await the neutrinos from a
 galactic supernova and have prompt alarms to alert the world if a
 supernova neutrino burst has been seen.  Additionally, all of these
 experiments are networked together into a system known as SNEWS (the
@@ -153,10 +158,10 @@ arrive hours before the photons. So, for optical astronomers, the
 neutrinos act as an early warning and give the optical community time
 to prepare for the arriving light.  This once in a generation
 opportunity must not be missed. But, where should we point our
-telescopes?  Luckily, the Super-Kamiokande experiment (though one it
+telescopes?  Luckily, the \superk experiment (though one it
 it's detection channels) can provide some pointing information.
 
-Most of the neutrino interactions in the water of the Super-Kamiokande
+Most of the neutrino interactions in the water of the \superk
 experiment are inverse beta decay (IBD) where a neutrino is captured
 by a proton resulting in a positron (which is detected) and a neutron.
 The positron in this reaction carries no directional memory of the
@@ -169,7 +174,7 @@ determine the direction of the star to within about 3-5
 degrees~\cite{2016APh....81...39A}.  Interestingly, systems which form black
 holes come from more massive progenitors and result in higher energy
 neutrinos that point better (more like 2 degrees).  Near the beginning
-of the LSST run Super-Kamiokande is planning to begin running with
+of the LSST run \superk is planning to begin running with
 Gadolinium dissolved in the water.  Gadolinium has a extremely large
 interaction cross-section for neutron interactions and will allow for
 efficient tagging of the neutrons in IBD events.  By removing this
@@ -189,7 +194,7 @@ LSST survey and it is visible from the site, LSST is particularly well
 suited to do the initial identification and notify the rest of the
 community.  There are two reasons for this.  The first is that the FOV
 is large. LSST's 3.6 degree FOV is well matched to the initial search
-box that would be presented by Super-Kamiokande.  Depending on the
+box that would be presented by \superk.  Depending on the
 size either a single pointing or a tight pattern of dithering over a
 few degrees of the sky is all that will be necessary.  LSST can
 continually collect exposures in the region until the explosion is
@@ -236,8 +241,6 @@ disruption.
   \end{center}
 \end{figure}
 
-
-
 \section{Technical Description}
 \begin{footnotesize}
 {\it Describe your survey strategy modifications or proposed observations. Please comment on each observing constraint
@@ -246,6 +249,31 @@ if the constraint applies to all requested observations or a specific subset. Pl
 constraints are not relevant or important for your science goals.}
 \end{footnotesize}
 
+{\it [Here add some details on how the alert and how information will come
+from snews.  Currently I think the SK pointing info is not included so
+I need to discuss whether it can be added or we need the SK alert input]}
+
+As described in the introduction, a CCSN will result in a neutrino
+flux which can then be detected.  Each type of detector will see a
+different number of events in different channels depending on their
+mass and target.  Currently, only \superk is the only running
+experiment with pointing.  In the part way through the LSST 10 year
+survey, the liquid argon based DUNE, and the Hyper-Kamiokande
+experiments will come online.  Intra-detector timing triangulation may
+in the future also provide initial positions~\cite{Katepaper} but will
+likely not produce as accurate an estimate as the signal from the
+\superk experiment.
+
+For this reason, here we concentrate on position estimates as provided
+by \superk.  
+
+\begin{figure}
+  \begin{center}
+    \includegraphics[width=3.0in]{SK-realtime-pointing-resolution}
+    \caption{}
+    \label{fig:SK-realtime-pointing-resolution}
+  \end{center}
+\end{figure}
 
 
 \subsection{High-level description}
