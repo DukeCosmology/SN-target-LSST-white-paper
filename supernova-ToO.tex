@@ -26,12 +26,12 @@
   When a core collapse supernova (CCSN) occurs, over 99\% of its
   gravitational binding energy is released in the form of neutrinos.
   Over a period of 10s of seconds a powerful neutrino flux is emitted
-  from the collapsing star.  Due to the high density of material in
-  the resulting shock wave, optical photons escaping the expanding
-  stellar envelope leave the star and thus arrive at Earth up to
-  several hours later than the prompt neutrino signal.  A prompt alert
-  will be provided by neutrino experiments, alerting the astronomical
-  community that a supernova has occurred in our Galaxy.
+  from the collapsing star.  When the resulting shock wave finally
+  reach the surface of the star, optical photons escaping the
+  expanding stellar envelope leave the star and can arrive at Earth up
+  to several hours later than the prompt neutrino signal.  A prompt
+  alert will be provided by neutrino experiments, alerting the
+  astronomical community that a supernova has occurred in our Galaxy.
 
   Quickly identifying the location of the supernova on the sky and
   disseminating it to the all available ground and spaced-based
@@ -44,13 +44,13 @@
   identifying CCSN even if they fail or are obscured by the dust of
   the galactic plane.
 
-  Such events are only expected to occur a few times per century, and
-  studying the time evolution of a supernova from its start is an
+  Such events are only expected to occur only a few times per century,
+  and studying the time evolution of a supernova from its start is an
   unprecedented opportunity to learn both about the astrophysics of
-  these objects and the physics of neutrinos.  This is a proposal
-  to, upon receipt of such an alert, use LSST for the rest of that
-  night to continuously monitor a pre-identified piece of sky and by
-  using difference imaging, identify and announce the location of the
+  these objects and the physics of neutrinos.  This is a proposal to,
+  upon receipt of such an alert, use LSST for the rest of that night
+  to continuously monitor a pre-identified piece of sky and by using
+  difference imaging, identify and announce the location of the
   supernova.
   
 \end{abstract}
@@ -115,18 +115,18 @@ out into the star starting a explosion.  Only some hours later will
 the shock wave break out of the stellar envelope and become visible as
 a supernova explosion.
 
- The supernova converts the binding energy of the star into energy and
- over 99\% of it is released in the form of neutrinos. First in the
- neutronization burst, and then later in the cooling phase.  Crucially,
- all of these neutrinos escape the star in the first several tens of
- seconds of the explosion. Much can be learned about the dynamics of the
- explosion by studying the neutrino signal.  Even the formation of a
- black hole where a supernova doesn't form should be visible, with a
- cutoff of the neutrino signal.  The internal dynamics of the
- oscillations of the core and the complex neutrino interactions also
- all play a part. The density of neutrinos is so high in the explosion
- that they are thought to even interact with each other resulting in a
- complex phenomenology which is today not completely understood.
+The supernova converts the binding energy of the star into energy and
+over 99\% of it is released in the form of neutrinos. First in the
+neutronization burst, and then later in the cooling phase.  Crucially,
+all of these neutrinos escape the star in the first several tens of
+seconds of the explosion. Much can be learned about the dynamics of
+the explosion by studying the neutrino signal.  Even the formation of
+a black hole, where a supernova doesn't form, should be visible - with
+a cutoff of the neutrino signal.  The internal dynamics of the
+oscillations of the core and the complex neutrino interactions also
+all play a part. The density of neutrinos is so high in the explosion
+that they are thought to even interact with each other resulting in a
+complex phenomenology which is today not completely understood.
 
  The explosion mechanism itself is also not understood and a large
  fraction of simulations fail to explode at all.  It is still not
@@ -141,15 +141,16 @@ a supernova explosion.
  neutrinos were found after the fact in two neutrino detectors: IMB and the
  Kamiokande experiment, not in real time.
 
-Now, a world-wide network of neutrino detectors including the successor
-to IMB and Kamiokande, Super-Kamiokande (\superk) await the neutrinos from a
-galactic supernova and have prompt alarms to alert the world if a
-supernova neutrino burst has been seen.  Additionally, all of these
-experiments are networked together into a system known as SNEWS (the
-supernova early warning system) which does a blinded coincidence
-between automatic experimental alerts sending out an automated
-announcement to the GCN if more than one neutrino experiment has seen
-an burst of neutrinos.
+ Now, a world-wide network of neutrino detectors including the
+ successor to IMB and Kamiokande, Super-Kamiokande
+ (\superk)~\cite{superk_paper} 1await the neutrinos from a galactic
+ supernova and have prompt alarms to alert the world if a supernova
+ neutrino burst has been seen.  Additionally, all of these experiments
+ are networked together into a system known as SNEWS (the supernova
+ early warning system) which does a blinded coincidence between
+ automatic experimental alerts sending out an automated announcement
+ to the GCN if more than one neutrino experiment has seen an burst of
+ neutrinos.
 
 Fortunately, the physics of the shock-wave propagation presents us
 with an opportunity.  Because if takes so long for the light of the
@@ -174,7 +175,7 @@ determine the direction of the star to within about 3-5
 degrees~\cite{2016APh....81...39A}.  Interestingly, systems which form black
 holes come from more massive progenitors and result in higher energy
 neutrinos that point better (more like 2 degrees).  Near the beginning
-of the LSST run \superk is planning to begin running with
+of the LSST run, \superk is planning to begin running with
 Gadolinium dissolved in the water.  Gadolinium has a extremely large
 interaction cross-section for neutron interactions and will allow for
 efficient tagging of the neutrons in IBD events.  By removing this
@@ -200,7 +201,7 @@ few degrees of the sky is all that will be necessary.  LSST can
 continually collect exposures in the region until the explosion is
 seen.
 
-Secondly is LSSTs depth. It is true that there are many wild field
+Secondly is LSSTs depth. It is true that there are many wide field
 surveys that can try to identify the supernova.  If the supernova is
 bright, it is indeed the case that other facilities might easily see
 the supernova.  But, there are many reasons that a supernova with a
@@ -208,7 +209,7 @@ large neutrino flux might not be bright in the optical.  Foremost
 among these is that it might be hidden by dust in the galactic plane.
 Additionally, based on simulation work, there may be large classes of
 supernova that fail to create a explosion~\cite{Evanpaper}. Recent
-work has estimated that a supernova located in the disk obsucured by
+work has estimated that a supernova located in the disk obscured by
 dust could be as dim as magnitude 25~\cite{2016MNRAS.461.3296N}.
 So, we need to account for a huge dynamic range.  Finally it should be
 pointed out that LSST already is building a low latency transient
@@ -217,29 +218,8 @@ identification and distribution system.
 Identifying and studying a galactic supernova would be a scientific
 gold-mine for astronomy and particle physics.  The merit of enabling
 these studies are very high. The impact on running is minimal.  Over
-the course of a 10 year the survey we expect perhaps one night of
+the course of a 10 year the survey LSST could expect perhaps one night of
 disruption.
-
-\noindent.
-{\bf Add images.  Need real images with real references. Just place
-  holders now.}
-
-\begin{figure}
-  \begin{center}
-    \includegraphics[width=3.0in]{multimessenger-comparison}
-    \caption{}
-    \label{fig:multimessenger-comparison}
-  \end{center}
-\end{figure}
-
-
-\begin{figure}
-  \begin{center}
-    \includegraphics[width=3.0in]{SK-realtime-monitor-pointing}
-    \caption{}
-    \label{fig:SK-realtime-monitor-pointing}
-  \end{center}
-\end{figure}
 
 \section{Technical Description}
 \begin{footnotesize}
@@ -253,19 +233,103 @@ constraints are not relevant or important for your science goals.}
 from snews.  Currently I think the SK pointing info is not included so
 I need to discuss whether it can be added or we need the SK alert input]}
 
+\subsection{The neutrino signal}
+\label{sec:signal}
+
 As described in the introduction, a CCSN will result in a neutrino
 flux which can then be detected.  Each type of detector will see a
 different number of events in different channels depending on their
 mass and target.  Currently, only \superk is the only running
-experiment with pointing.  In the part way through the LSST 10 year
+experiment with pointing.  Part way through the LSST 10 year
 survey, the liquid argon based DUNE, and the Hyper-Kamiokande
 experiments will come online.  Intra-detector timing triangulation may
-in the future also provide initial positions~\cite{Katepaper} but will
-likely not produce as accurate an estimate as the signal from the
-\superk experiment.
+in the future also provide initial positions~\cite{Katepaper}.
 
-For this reason, here we concentrate on position estimates as provided
-by \superk.  
+For the purposes of this proposal we focus on the pointing signal as
+supplied by the \superk experiment.  When the neutrinos leave the
+exploding star they travel to the Earth and then either pass directly
+into an underground neutrino detector or pass through the other side
+of the Earth to the detector. The Earth does not attenuate the
+neutrino signal at all (but can induce complex neutrino-flavor
+oscillation effects).  When the neutrinos reach \superk they interact
+with water molecules in the tank.
+
+In the early neutronization burst, the bulk of the emitted neutrinos
+are $\nu_e$ but as the cooling phase begins anti-electron neutrinos
+and other neutrino flavors are produced in roughly equal numbers as
+the energy is lost through the production of neutrino anti-neutrino
+pairs from all flavors.  However, due to the differing opacities in
+the star for different neutrino species the anti-electron neutrino
+decouple from the deepest part of the star and thus have the highest
+temperatures and energies.  When those neutrinos reach \superk, the
+bulk of the interactions are with protons and proceed through the
+inverse beta decay (IBD) reaction:
+
+$$ \overline{\nu}_{e}+ p \rightarrow e^{+} + n. $$
+
+In this reaction the positron is detected through its production of
+Cherenkov radiation and the neutral neutron is (typically) not
+detected.  Critically, the positron produced in this reaction does not
+point back at the supernova.   However, a few percent of the neutrino interactions proceed
+through atomic electron scattering:
+
+$$ \nu + e^{-} \rightarrow \nu + e^{-} .$$
+
+This interaction proceeds through both charge-current (via a W boson)
+weak interactions where it is sensitive to both electron neutrino and anti-neutrino
+fluxes, and neutral-current (via a Z boson) weak interactions which is
+sensitive to all neutrino flavors. For a more detailed description of
+the expected fluxes and neutrino interactions expected in detector
+refer to the review~\cite{2012ARNPS..62...81S}.
+
+\subsection{Expected pointing resolution}
+
+The expected pointing resolution in a water Cherenkov detector will
+scale with the number of interactions detected.  As explained in
+section~\ref{sec:signal} a set electron scattering interactions which
+point back to the supernova will be sitting on top of a background of
+now pointing interactions from the IBD neutrino captures.
+Figure~\ref{fig:SK-realtime-monitor-pointing} taken
+from~\cite{2016APh....81...39A} shows a typical expected set of
+interactions from supernova near the galactic center with its
+direction reconstructed.  In this figure the electron scattering
+interactions are in red, the IBD interactions in blue.
+
+\begin{figure}
+  \begin{center}
+    \includegraphics[width=3.0in]{SK-realtime-monitor-pointing}
+    \caption{}
+    \label{fig:SK-realtime-monitor-pointing}
+  \end{center}
+\end{figure}
+
+For a supernova located at 10kpc from Earth (the galactic center is
+approximately 8kpc away) the order of 10,000 neutrino interactions are
+expected there are a range of expected fluxes which can be found in
+models from different groups~\cite{model_references}.  Pointing to the
+supernova by fitting the electron scattering signal on top of the IBD
+background is found to give a resolution of approximately
+%
+$$ \frac{30^\circ}{\sqrt{N}.}, $$
+%
+where N is the number of electron-neutrino scattering interactions.
+With roughly 1~\% of 10,000 interactions from a 10kpc supernova this
+tells us that we should expect a rough poiniting resolution of $3^\circ$.
+
+
+A more careful study by the \superk collaboration
+in~\cite{2016APh....81...39A} plots a 68\% opening angle coverage as a
+function of distance for a few flux
+models. Figure~\ref{fig:SK-realtime-pointing-resolution} shows how the
+pointing is expected to scale as a function of distance with neutrino
+oscillations taken into account for one of the models.
+
+By the time the LSST survey begins we expect \superk to be doped with
+0.02\% GdSo4.  The addition of gadolinium (which has a high neutron
+cross-section) to the water will allow the neutron to be tagged in IBD
+events thus removing a portion of the non-pointing background and
+improving the pointing resolution. [Need more details? phases? Have
+private plot from Nakahata...]
 
 \begin{figure}
   \begin{center}
@@ -275,6 +339,112 @@ by \superk.
   \end{center}
 \end{figure}
 
+\subsection{Alert input}
+
+\subsubsection{SNEWS}
+
+% SNEWS template
+\begin{verbatim}
+TITLE:         GCN/SNEWS EVENT NOTICE
+NOTICE_DATE:   Tue 26 Jun 18 16:00:08 UT
+NOTICE_TYPE:   TEST COINCIDENCE
+TRIGGER_NUM:   1000182
+EVENT_RA:      Undefined (J2000),
+              Undefined (current),
+              Undefined (1950)
+EVENT_DEC:     Undefined (J2000),
+              Undefined (current),
+              Undefined (1950)
+EVENT_ERROR:   360.0 [deg radius, statistical plus systematic], 68.00% containment
+EVENT_FLUENCE: 0 [neutrinos]
+EVENT_TIME:    57601.00 SOD {16:00:01.00} UT
+EVENT_DATE:    18295 TJD;   177 DOY;   18/06/26
+EVENT_DUR:     0.00 [sec]
+EXPT:          Detector_A Good, Detector_B Good, Detector_D Possible, Detector_E Good, Detector_F Possible, 
+SUN_POSTN:      95.45d {+06h 21m 49s}  +23.34d {+23d 20' 30"}
+SUN_DIST:      Undefined [deg]
+MOON_POSTN:    257.26d {+17h 09m 02s}  -19.06d {-19d 03' 38"}
+MOON_DIST:     Undefined [deg]
+MOON_ILLUM:    98 [%]
+GAL_COORDS:    Undefined,Undefined [deg] galactic lon,lat of the event
+ECL_COORDS:    Undefined,Undefined [deg] ecliptic lon,lat of the event
+COMMENTS:      SNEWS Event without RA,Dec coordinates.  
+COMMENTS:      This is a Test COINCIDENCE notice.  It is NOT a Real event.  
+COMMENTS:      This is a Test COINCIDENCE notice.  The EXPT labels have been anonymized.  
+COMMENTS:         
+COMMENTS:      RA,Dec fields undefined.  
+COMMENTS:      For more information see:  
+COMMENTS:
+\end{verbatim}
+
+% SNEWS direct template
+
+\begin{verbatim}
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA1
+
+- ---------------------------------------------
+*** SNEWS ALERT ***
+Coincidence rating: GOLD
+Alarms in the coincidence:
+Experiment: 5 LVD
+Level: GOOD
+Time: Jan 02 2006 22:34:37.000000000
+Duration:   10.00
+No. of signal events:    0.00
+Right Ascension:    0.00
+Declination:    0.00
+Error:  360.10
+- ---------------------------------------------
+Experiment: 3 SNO
+Level: GOOD 
+Time: Jan 02 2006 22:34:37.000000000
+Duration:   10.00
+No. of signal events:    0.00
+Right Ascension:    0.00
+Declination:    0.00
+Error:  360.10
+- ---------------------------------------------
+Experiment: 1 Super-K
+Level: POSSIBLE 
+Time: Jan 02 2006 22:34:37.000000000
+Duration:   10.00
+No. of signal events:    0.00
+Right Ascension:    13.00
+Declination:    -3.00
+Error:  4.0
+- ---------------------------------------------
+
+For information, see web page http://snews.bnl.gov/
+-----BEGIN PGP SIGNATURE-----
+Version: GnuPG v1.4.9 (GNU/Linux)
+
+iD8DBQFMhguY4A2qNGjfk/cRAp+DAKD2cFdN4aHZomU87XhhA2r7GalWcACgt/oM
+ffObwWjd44FA6kx5gx/RLDQ=
+=DtVE
+-----END PGP SIGNATURE-----
+\end{verbatim}
+
+
+\subsubsection{\superk direct alert}
+
+% SK template
+\begin{verbatim}
+Super-Kamiokande, a 50000 ton water Cherenkov imaging detector
+situated 1000 meters underground in the Kamioka mine, Gifu, Japan, has
+observed a neutrino burst from a nearby supernova.  Within a fiducial
+volume of 22500 tons, preliminary results indicate 5227
+neutrino-produced events have been detected with energies greater than
+7.0 MeV. An SN1987A-like explosion would be expected to produce such a
+signal in Super-Kamiokande if the progenitor star was located at a
+distance between 7.55 and 10.36 kpc from Earth. These events were
+observed over an interval of 17.9 seconds, with the first event
+arriving at 2017 Nov 2.318437 UT. The estimated supernovadirection is
+R.A. = 110 (degrees) and Dec.= 6 (degrees), within 3.29, 4.72 and 5.62
+degrees for, respectively, 68, 90 and 95% C.L. error circles. The
+probability to have the SN located within 2, 5, and 10 degrees of the
+central position is 0.36, 0.92 and 1.00, respectively.
+\end{verbatim}
 
 \subsection{High-level description}
 \begin{footnotesize}
@@ -304,6 +474,15 @@ calculated for point sources). Please provide sky brightness or image depth cons
 The question of image depth is interesting.  What exposure length?
 Dynamic adjustment?  
 
+\begin{figure}
+  \begin{center}
+    \includegraphics[width=3.0in]{multimessenger-comparison}
+    \caption{}
+    \label{fig:multimessenger-comparison}
+  \end{center}
+\end{figure}
+
+
 
 \subsection{Co-added image depth and/or total number of visits}
 \begin{footnotesize}{\it  Constraints on the total co-added depth and/or total number of visits.
@@ -328,7 +507,7 @@ of filters, please describe.}
 {\it Please describe any filter constraints not included above.}
 \end{footnotesize}
 
-Peak hieght vs NIR for seeing through dust
+Peak height vs NIR for seeing through dust
 
 \subsection{Exposure constraints}
 \begin{footnotesize}
