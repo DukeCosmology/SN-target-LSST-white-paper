@@ -277,7 +277,7 @@ This interaction proceeds through both charge-current (via a W boson)
 weak interactions where it is sensitive to both electron neutrino and
 anti-neutrino fluxes, and neutral-current (via a Z boson) weak
 interactions which is sensitive to all neutrino flavors. Unlike the
-IBD reactions, these atomic electron scattering interactions do point
+IBD reactions, these atomic electron scattering interactions {\bf do} point
 back to the supernova.  For a more detailed description of the
 expected fluxes and neutrino interactions expected in detector refer
 to the review~\cite{2012ARNPS..62...81S}.
@@ -286,11 +286,11 @@ to the review~\cite{2012ARNPS..62...81S}.
 
 The expected pointing resolution in a water Cherenkov detector will
 scale with the number of interactions detected.  As explained in
-section~\ref{sec:signal} a set electron scattering interactions which
+section~\ref{sec:signal} a set of electron scattering interactions which
 point back to the supernova will be sitting on top of a background of
-now pointing interactions from the IBD neutrino captures.
+non-pointing interactions from the IBD neutrino captures.
 Figure~\ref{fig:SK-realtime-monitor-pointing} taken
-from~\cite{2016APh....81...39A} shows a typical expected set of
+from~\cite{2016APh....81...39A} shows a typical example set of
 interactions from supernova near the galactic center with its
 direction reconstructed.  In this figure the electron scattering
 interactions are in red, the IBD interactions in blue.
@@ -303,25 +303,36 @@ interactions are in red, the IBD interactions in blue.
   \end{center}
 \end{figure}
 
-For a supernova located at 10kpc from Earth (the galactic center is
+For a supernova located 10kpc from the Earth (the galactic center is
 approximately 8kpc away) the order of 10,000 neutrino interactions are
-expected there are a range of expected fluxes which can be found in
-models from different groups~\cite{model_references}.  Pointing to the
-supernova by fitting the electron scattering signal on top of the IBD
-background is found to give a resolution of approximately
+expected in \superk.  Supernova that are closer or further away will
+have their fluxes scaled simply by scaling to their distance with a
+factor of $1/r^2$.  Although 10,000 interactions are typical, expected
+fluxes are found to have a range of values by different simulation
+groups varying by factors of XXX~\cite{model_references}.  Given a
+number of interactions, pointing to the supernova by fitting the
+electron scattering signal on top of the IBD background is found to
+give a resolution of approximately
 %
-$$ \frac{30^\circ}{\sqrt{N}.}, $$
+$$ \Delta \theta = \frac{30^\circ}{\sqrt{N}.}, $$
 %
-where N is the number of electron-neutrino scattering interactions.
-With roughly 1~\% of 10,000 interactions from a 10kpc supernova this
-tells us that we should expect a rough pointing resolution of $3^\circ$.
+where N is the number of electron-neutrino scattering interactions and
+the angular resolution is a half-opening
+angle~\cite{2012ARNPS..62...81S}.  With roughly 1\% of 10,000
+interactions from a 10kpc supernova being electron scattering events,
+this tells us that we should expect a rough pointing resolution of
+$3^\circ$.  Closer supernova will have higher numbers of interactions
+with better pointing, and those further away will have their
+resolution decreased.
 
 A more careful study by the \superk collaboration
 in~\cite{2016APh....81...39A} plots a 68\% opening angle coverage as a
 function of distance for a few flux
 models. Figure~\ref{fig:SK-realtime-pointing-resolution} shows how the
 pointing is expected to scale as a function of distance with neutrino
-oscillations taken into account for one of the models.
+oscillations taken into account for one of the models. At 10kpc the
+pointing is near $3^\circ$ as expected.
+
 
 By the time the LSST survey begins we expect \superk to be doped with
 0.02\% GdSo4.  The addition of gadolinium (which has a high neutron
@@ -425,7 +436,7 @@ ffObwWjd44FA6kx5gx/RLDQ=
 \end{verbatim}
 
 
-\subsubsection{\superk direct alert}
+\subsubsection{Super-Kamiokande direct alert}
 
 % SK template
 \begin{verbatim}
