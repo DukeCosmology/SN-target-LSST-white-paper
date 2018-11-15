@@ -229,30 +229,28 @@ if the constraint applies to all requested observations or a specific subset. Pl
 constraints are not relevant or important for your science goals.}
 \end{footnotesize}
 
-{\it [Here add some details on how the alert and how information will come
-from snews.  Currently I think the SK pointing info is not included so
-I need to discuss whether it can be added or we need the SK alert input]}
-
 \subsection{The neutrino signal}
 \label{sec:signal}
 
 As described in the introduction, a CCSN will result in a neutrino
 flux which can then be detected.  Each type of detector will see a
 different number of events in different channels depending on their
-mass and target.  Currently, only \superk is the only running
-experiment with pointing.  Part way through the LSST 10 year
-survey, the liquid argon based DUNE, and the Hyper-Kamiokande
-experiments will come online.  Intra-detector timing triangulation may
-in the future also provide initial positions~\cite{Katepaper}.
+mass and target.  Currently, \superk is the only running experiment
+with pointing.  Part way through the LSST 10 year survey, the liquid
+argon based DUNE, and the Hyper-Kamiokande experiments will come
+online.  The SNEWS system is also now working on adding pointing
+information utilizing intra-detector timing.  The travel times across
+the Earth from multiple detectors (such as \superk and IceCube) can
+triangulate the CCSN position.~\cite{Katepaper}.
 
-For the purposes of this proposal we focus on the pointing signal as
-supplied by the \superk experiment.  When the neutrinos leave the
-exploding star they travel to the Earth and then either pass directly
-into an underground neutrino detector or pass through the other side
-of the Earth to the detector. The Earth does not attenuate the
-neutrino signal at all (but can induce complex neutrino-flavor
-oscillation effects).  When the neutrinos reach \superk they interact
-with water molecules in the tank.
+Here we primarily focus on the pointing resolution as supplied by the
+\superk experiment.  When the neutrinos leave the exploding star they
+travel to the Earth and then either pass directly into an underground
+neutrino detector or pass through the other side of the Earth to the
+detector. The Earth does not attenuate the neutrino signal at all (but
+can induce complex neutrino-flavor oscillation effects).  When the
+neutrinos reach \superk they interact with water molecules in the
+tank.
 
 In the early neutronization burst, the bulk of the emitted neutrinos
 are $\nu_e$ but as the cooling phase begins anti-electron neutrinos
@@ -276,11 +274,13 @@ through atomic electron scattering:
 $$ \nu + e^{-} \rightarrow \nu + e^{-} .$$
 
 This interaction proceeds through both charge-current (via a W boson)
-weak interactions where it is sensitive to both electron neutrino and anti-neutrino
-fluxes, and neutral-current (via a Z boson) weak interactions which is
-sensitive to all neutrino flavors. For a more detailed description of
-the expected fluxes and neutrino interactions expected in detector
-refer to the review~\cite{2012ARNPS..62...81S}.
+weak interactions where it is sensitive to both electron neutrino and
+anti-neutrino fluxes, and neutral-current (via a Z boson) weak
+interactions which is sensitive to all neutrino flavors. Unlike the
+IBD reactions, these atomic electron scattering interactions do point
+back to the supernova.  For a more detailed description of the
+expected fluxes and neutrino interactions expected in detector refer
+to the review~\cite{2012ARNPS..62...81S}.
 
 \subsection{Expected pointing resolution}
 
@@ -314,8 +314,7 @@ $$ \frac{30^\circ}{\sqrt{N}.}, $$
 %
 where N is the number of electron-neutrino scattering interactions.
 With roughly 1~\% of 10,000 interactions from a 10kpc supernova this
-tells us that we should expect a rough poiniting resolution of $3^\circ$.
-
+tells us that we should expect a rough pointing resolution of $3^\circ$.
 
 A more careful study by the \superk collaboration
 in~\cite{2016APh....81...39A} plots a 68\% opening angle coverage as a
@@ -472,17 +471,15 @@ calculated for point sources). Please provide sky brightness or image depth cons
 \end{footnotesize}
 
 The question of image depth is interesting.  What exposure length?
-Dynamic adjustment?  
+Dynamic adjustment?  New figures:
 
 \begin{figure}
   \begin{center}
     \includegraphics[width=3.0in]{multimessenger-comparison}
-    \caption{}
+    \caption{Caption}
     \label{fig:multimessenger-comparison}
   \end{center}
 \end{figure}
-
-
 
 \subsection{Co-added image depth and/or total number of visits}
 \begin{footnotesize}{\it  Constraints on the total co-added depth and/or total number of visits.
