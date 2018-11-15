@@ -351,7 +351,61 @@ private plot from Nakahata...]
 
 \subsection{Alert input}
 
-\subsubsection{SNEWS}
+
+In order to point LSST, the observatory control system (OCS) must first
+receive information from the neutrino experiments that a light from a
+galactic supernova is about to arrive.  Time is of the essence since
+depending on the size and type of the star the breakout time could
+range from minutes to several hours~\cite{needcitation}.  There
+currently more than one way to receive an alert. If selected LSST must
+work with the neutrino community to ensure that the proper information
+that LSST needs is being promptly transferred.
+
+There are two broad classes of alerts to consider.  Each experiment
+has the option to send its own alert to the astronomical community.
+For example, if \superk determines a CCSN in our galaxy has occurred
+it might send the following template like text to the Astronomers
+Telegram:
+
+
+\begin{verbatim}
+Super-Kamiokande, a 50000 ton water Cherenkov imaging detector
+situated 1000 meters underground in the Kamioka mine, Gifu, Japan, has
+observed a neutrino burst from a nearby supernova.  Within a fiducial
+volume of 22500 tons, preliminary results indicate 5227
+neutrino-produced events have been detected with energies greater than
+7.0 MeV. An SN1987A-like explosion would be expected to produce such a
+signal in Super-Kamiokande if the progenitor star was located at a
+distance between 7.55 and 10.36 kpc from Earth. These events were
+observed over an interval of 17.9 seconds, with the first event
+arriving at 2017 Nov 2.318437 UT. The estimated supernova direction is
+R.A. = 110 (degrees) and Dec.= 6 (degrees), within 3.29, 4.72 and 5.62
+degrees for, respectively, 68, 90 and 95% C.L. error circles. 
+The probability to have the SN located within 2, 5, and 10 degrees 
+of the central position is 0.36, 0.92 and 1.00, respectively.
+\end{verbatim}
+
+C.W. Walter is a member of both \superk and the LSST project and
+the \superk spokesperson has expressed interest in personal
+conversation to supply direct information to the LSST OCS in whatever
+form is most appropriate.
+
+For many years the neutrino community as a whole has being preparing
+for a galactic supernova through the creation of the Supernova Early
+Warning System (SNEWS)~\cite{2004NJPh....6..114A}\footnote{Website and
+  more information at \url{https://snews.bnl.gov}}. SNEWS acts as a
+broker and a blinded system to look for coincidences in time between
+supernova alarms coming from different neutrino experiments. If one is
+seen, then they alert the entire astronomical community through several
+channels. This reduces the false coincidence rate to less than one
+alert per century. SNEWS can also act as a broker passing alerts from
+individual experiments to their alert system
+
+SNEWS has several ways of making announcements to the community.  They
+also give a direct connection to the IceCube experiment which benefits
+from an external trigger.  A direct connection to LSST could also be
+arranged.  Current  alerts include announcements to the GCN (a
+template is seen below):
 
 % SNEWS template
 \begin{verbatim}
@@ -388,6 +442,9 @@ COMMENTS:
 \end{verbatim}
 
 % SNEWS direct template
+
+\noindent
+and email alerts such as the template below.
 
 \begin{verbatim}
 -----BEGIN PGP SIGNED MESSAGE-----
@@ -435,26 +492,19 @@ ffObwWjd44FA6kx5gx/RLDQ=
 -----END PGP SIGNATURE-----
 \end{verbatim}
 
+Currently, a fast alarm goes directly from \superk to the SNEWS system
+with no human intervention.  However, that alarm does not contain
+pointing information.  Now, that information is released only after a
+virtual meeting of \superk collaborators to confirm the alarm.
+However, it is recognized that this step slows down dissemination, so
+discussion is starting on the best way to pass this information either
+directly to projects like LSST or through systems like SNEWS.
 
-\subsubsection{Super-Kamiokande direct alert}
-
-% SK template
-\begin{verbatim}
-Super-Kamiokande, a 50000 ton water Cherenkov imaging detector
-situated 1000 meters underground in the Kamioka mine, Gifu, Japan, has
-observed a neutrino burst from a nearby supernova.  Within a fiducial
-volume of 22500 tons, preliminary results indicate 5227
-neutrino-produced events have been detected with energies greater than
-7.0 MeV. An SN1987A-like explosion would be expected to produce such a
-signal in Super-Kamiokande if the progenitor star was located at a
-distance between 7.55 and 10.36 kpc from Earth. These events were
-observed over an interval of 17.9 seconds, with the first event
-arriving at 2017 Nov 2.318437 UT. The estimated supernovadirection is
-R.A. = 110 (degrees) and Dec.= 6 (degrees), within 3.29, 4.72 and 5.62
-degrees for, respectively, 68, 90 and 95% C.L. error circles. The
-probability to have the SN located within 2, 5, and 10 degrees of the
-central position is 0.36, 0.92 and 1.00, respectively.
-\end{verbatim}
+LSST could decide to require multiple or single experimental alarms
+still taking the pointing system from \superk.  In the future, SNEWS
+is also expected to supply pointing based on triangulation using
+timing and this information could be combined with the electron
+scattering signal.
 
 \subsection{High-level description}
 \begin{footnotesize}
@@ -464,16 +514,50 @@ central position is 0.36, 0.92 and 1.00, respectively.
 \vspace{.3in}
 
 
+Describe sequence here:
+
+\begin{itemize}
+\item Receive alert
+\item Go into SN watch mode
+\item choose exposure, filter and dither pattern
+\item Perform fast DIA analysis to locate CCSN candidate
+\item Pass information about the CCSN candidate to community o allow
+  other followup observations.
+\item Follow for some time for the rest of the night of observation.
+\end{itemize}
+
 \subsection{Footprint -- pointings, regions and/or constraints}
 \begin{footnotesize}{\it Describe the specific pointings or general region (RA/Dec, Galactic longitude/latitude or 
 Ecliptic longitude/latitude) for the observations. Please describe any additional requirements, especially if there
 are no specific constraints on the pointings (e.g. stellar density, galactic dust extinction).}
 \end{footnotesize}
 
+Even with a large neutrino signal the optical signal from the CCSN
+could be quite dim.  This is a place where LSST will make a
+particularly vital contribution.  The explosion could fail or form a
+black hole~\cite{evanpaper?} or the supernova could be hidden in the
+dust of the galactic plane.  The expected range of brightnesses are
+explored in~\cite{2016MNRAS.461.3296N} and
+figure~\ref{fig:multimessenger-comparison} taken from that paper shows
+the reach of LSST for the dimmest supernova compared to other facilities.
+
+\begin{figure}
+  \begin{center}
+    \includegraphics[width=2.0in]{multimessenger-comparison}
+    \caption{Caption}
+    \label{fig:multimessenger-comparison}
+  \end{center}
+\end{figure}
+
+Depending on the pointing resolution the OCS would either point the
+telescope at one point in the sky taking a continuous set of
+exposures, or likely put it in a tight dither pattern covering a few
+FOVs worth of area.
+
 \subsection{Image quality}
 \begin{footnotesize}{\it Constraints on the image quality (seeing).}\end{footnotesize}
 
-Not relevant.
+The image quality is not relevant.
 
 \subsection{Individual image depth and/or sky brightness}
 \begin{footnotesize}{\it Constraints on the sky brightness in each image and/or individual image depth for point sources.
@@ -481,16 +565,7 @@ Please differentiate between motivation for a desired sky brightness or individu
 calculated for point sources). Please provide sky brightness or image depth constraints per filter.}
 \end{footnotesize}
 
-The question of image depth is interesting.  What exposure length?
-Dynamic adjustment?  New figures:
-
-\begin{figure}
-  \begin{center}
-    \includegraphics[width=3.0in]{multimessenger-comparison}
-    \caption{Caption}
-    \label{fig:multimessenger-comparison}
-  \end{center}
-\end{figure}
+Not relevant.
 
 \subsection{Co-added image depth and/or total number of visits}
 \begin{footnotesize}{\it  Constraints on the total co-added depth and/or total number of visits.
@@ -498,9 +573,14 @@ Please differentiate between motivations for a given co-added depth and total nu
 Please provide desired co-added depth and/or total number of visits per filter, if relevant.}
 \end{footnotesize}
 
+Not relevant (?).  Should we try to build a co-add?
+
 \subsection{Number of visits within a night}
 \begin{footnotesize}{\it Constraints on the number of exposures (or visits) in a night, especially if considering sequences of visits.  }
 \end{footnotesize}
+
+This mode would be envisioned to completely take over the facility for
+one dark period after the alarm arrives.
 
 \subsection{Distribution of visits over time}
 \begin{footnotesize}{\it Constraints on the timing of visits --- within a night, between nights, between seasons or
@@ -510,18 +590,24 @@ case of missed visits (due to weather, etc.). If this timing should include part
 of filters, please describe.}
 \end{footnotesize}
 
+Note relevant.
+
 \subsection{Filter choice}
 \begin{footnotesize}
 {\it Please describe any filter constraints not included above.}
 \end{footnotesize}
 
-Peak height vs NIR for seeing through dust
+Peak height vs NIR for seeing through dust. Need to look at light
+curves and throughput.
 
 \subsection{Exposure constraints}
 \begin{footnotesize}
 {\it Describe any constraints on the minimum or maximum exposure time per visit required (or alternatively, saturation limits).
 Please comment on any constraints on the number of exposures in a visit.}
 \end{footnotesize}
+
+Dynamic exposure? What happens if it is too bright?
+
 
 \subsection{Other constraints}
 \begin{footnotesize}
@@ -532,6 +618,11 @@ Please comment on any constraints on the number of exposures in a visit.}
 \begin{footnotesize}
 {\it Approximate total time requested for these observations, using the guidelines available at \url{https://github.com/lsst-pst/survey_strategy_wp}.}
 \end{footnotesize}
+
+We expect no more than one night in the 10 year survey would be
+affected by this program. With an expected rate of 3 per century there
+is a 22\% chance one CCSN would be seen and a 3\% chance there could
+be two.
 
 \vspace{.3in}
 
@@ -570,6 +661,8 @@ Please comment on any constraints on the number of exposures in a visit.}
 \end{enumerate}}
 \end{footnotesize}
 
+Not relevant.
+
 \section{Performance Evaluation}
 \begin{footnotesize}
 {\it Please describe how to evaluate the performance of a given survey in achieving your desired
@@ -583,6 +676,11 @@ if you have already transformed this into a MAF metric, please add a link to the
 \href{https://github.com/lsst-nonproject/sims_maf_contrib}{sims\_maf\_contrib}) in addition to the text description. (Limit: 2 pages).}
 \end{footnotesize}
 
+Not relevant.  Performance would be measured in successfully
+identifying and quickly notifying the community of the location of the
+optical supernova counterpart.
+
+
 \vspace{.6in}
 
 \section{Special Data Processing}
@@ -590,6 +688,8 @@ if you have already transformed this into a MAF metric, please add a link to the
 {\it Describe any data processing requirements beyond the standard LSST Data Management pipelines and how these will be achieved.}
 \end{footnotesize}
 
+A version of the DIA pipeline would need to be utilized to make the
+initial identification.
 
 \section{References}
 
