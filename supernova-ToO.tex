@@ -25,13 +25,13 @@
 
 \begin{abstract}
 
-  A few times a century, a core collapse supernova (CCSN) occurs in our
-  galaxy. When such a core collapse supernova happens, over 99\%
-  of its gravitational binding energy is released in the form of
-  neutrinos.  Over a period of 10s of seconds a powerful neutrino flux
-  is emitted from the collapsing star.  When the exploding shock wave
-  finally reaches the surface of the star, optical photons escaping
-  the expanding stellar envelope leave the star and eventually arrive at
+  A few times a century, a core collapse supernova (CCSN) occurs in
+  our galaxy. When such galactic CCSN happen, over 99\% of its
+  gravitational binding energy is released in the form of neutrinos.
+  Over a period of 10s of seconds a powerful neutrino flux is emitted
+  from the collapsing star.  When the exploding shock wave finally
+  reaches the surface of the star, optical photons escaping the
+  expanding stellar envelope leave the star and eventually arrive at
   Earth as a visible brightening.
 
   By combining the multi-messenger signal from optical, neutrino, and
@@ -96,33 +96,35 @@ Categorization:
 \label{sec:motivation}
 
 No visible galactic CCSN have been seen and measured in the modern
-scientific era.  Although the rate is not completely known, CCSN are
-thought to occur roughly two or three times a century.  The closest
-modern CCSN we have observed was SN1987a in the LMC.  Using a alarm
-from neutrino detectors as a trigger, LSST can quickly identify and
-characterize a galactic core-collapse supernova and then notify the
-rest of the astronomical community which can then track it in multiple
-wavelengths from the ground and space.  The early identification of
-the supernova optical counterpart will be key in an extensive program
-of multi-messenger astronomy.
+scientific era. It is thought that CCSN occur roughly two or three
+times a century~\cite{CCSN-RATE}.  The closest modern CCSN we have
+observed was SN1987a in the LMC.  Using a alarm from neutrino
+detectors as a trigger, LSST can quickly identify and characterize a
+galactic core-collapse supernova and then notify the rest of the
+astronomical community which can then track it in multiple wavelengths
+from the ground and space.  The early identification of the supernova
+optical counterpart will be key in an extensive program of
+multi-messenger astronomy.
 
-To understand how the neutrino trigger works, it is useful to recall
-the basic sequence of CCSN formation.  As massive ($ > 8 M_\odot$ )
-stars approach the end of their lives, they begin to run out of the
-hydrogen which has been fueling their fusion burning.  The resulting
-loss of pressure results in a contraction of the star, raising its
-temperature until the burning of the helium produced in the previous
-hydrogen fusion can begin. This cycle repeats, next burning carbon,
-neon, oxygen, and silicon until finally a core of iron remains. At
-this point, the star's ultimate fate depends on its mass.  If massive
+How a neutrino-based supernova alarm can be used to prepare for the
+arrival of an optical signal in LSST can be understood from the basic
+sequence of CCSN formation.  As massive ($ > 8 M_\odot$ ) stars
+approach the end of their lives, they begin to run out of the hydrogen
+which has been fueling their fusion burning.  The resulting loss of
+pressure results in a contraction of the star, raising its temperature
+until the burning of the helium produced in the previous hydrogen
+fusion can begin. This cycle repeats, next burning carbon, neon,
+oxygen, and silicon until finally a core of iron remains. At this
+point, the star's ultimate fate depends on its mass.  If massive
 enough, the in-falling material crushes the stellar remnant resulting
 in a black hole.  Otherwise, the gas bounces back off of the
-compressing core and a shock-wave heads out back into the star.  This
-shock-wave, further supported by copious neutrinos streaming off the
-cooling core, drives out into the star starting a explosion.
-Depending on the size of the star, only minutes to many hours later
-will the shock wave break out of the stellar envelope and become
-visible as a supernova explosion to optical telescopes.
+compressing core and a shock-wave begins moving towards the surface of
+the star.  This shock-wave, further supported by copious neutrinos
+streaming off the cooling core, drives out into the star starting a
+explosion.  Depending on the size of the star, only minutes to many
+hours later will the shock wave actually break out of the stellar
+envelope and become visible as a supernova explosion to optical
+telescopes.
 
 Studying a galactic supernova in detail is an amazing opportunity to
 do multi-messenger astronomy~\cite{2016MNRAS.461.3296N}.  Neutrino,
@@ -132,9 +134,9 @@ star into energy and over 99\% of it is released in the form of
 neutrinos.  Crucially, all of these neutrinos escape the star in the
 first several tens of seconds of the explosion. Much can be learned
 about the dynamics of the explosion by studying the neutrino signal.
-Even the formation of a black hole, where a supernova doesn't form,
-should be visible - with a cutoff of the neutrino
-signal~\cite{2011ApJ...730...70O, 2017hsn..book.1555O}.
+Even the formation of a black hole, where the neutrino signal will be
+abruptly terminated, should be visible~\cite{2011ApJ...730...70O,
+  2017hsn..book.1555O}.
 
 Additionally, studying the optical explosion signal in detail from the
 beginning of the explosion will probe how the explosion proceeds and
@@ -161,18 +163,20 @@ which does a blinded coincidence between automatic experimental alerts
 sending out an automated announcement to the GCN if more than one
 neutrino experiment has seen a burst of neutrinos.
 
-In the near future, there will be new detectors with pointing ability
-and the SNEWS system will also add pointing information utilizing
-intra-detector timing using the fact that travel times across the
+Some detectors only can report the time of a neutrino burst, and do
+not have the ability to supply directional information.  In the near
+future, there will be new detectors with pointing ability and the
+SNEWS system will also add pointing information utilizing
+intra-detector timing by using the fact that travel times across the
 Earth from multiple detectors (such as \superk and IceCube) can
 triangulate the CCSN position.~\cite{Katepaper}.  However, currently,
-\superk is the only running experiment with pointing and we use its
-performance for this proposal. Most of the neutrino interactions in
-the water of the \superk experiment are inverse beta decay (IBD)
-($ \overline{\nu}_{e}+ p \rightarrow e^{+} + n $) where a neutrino is
-captured by a proton resulting in a positron (which is detected
-through its Cherenkov radiation) and a neutron.  The positron in this
-reaction carries no directional memory of the incoming
+\superk is the only running experiment with pointing ability, and we
+use its performance for this proposal. Most of the neutrino
+interactions in the water of the \superk experiment are inverse beta
+decay (IBD) ($ \overline{\nu}_{e}+ p \rightarrow e^{+} + n $) where a
+neutrino is captured by a proton resulting in a positron (which is
+detected through its Cherenkov radiation) and a neutron.  The positron
+in this reaction carries no directional memory of the incoming
 neutrino. However, a few percent of the neutrino interactions proceed
 through atomic electron scattering:
 $\nu + e^{-} \rightarrow \nu + e^{-} .$
@@ -199,23 +203,23 @@ SN1987a progenitor was thought to be a blue giant with a time delay of
 around 3 hours~\cite{ISAWTHISSOMWHERE}.
 
 LSST is particularly well suited to do the initial CCSN
-identification.  First of all, LSST's FOV is large. LSST's 3.6 degree
-FOV is well matched to the initial search region that would be presented
-by \superk.  Depending on the size, either a single pointing or a
-tight pattern of dithering over a few degrees of the sky is all that
-will be necessary.  LSST can continually collect exposures in the
-region until the explosion is seen. Next is LSSTs depth. It is true
-that there are many wide field surveys that can try to identify the
-supernova.  If the supernova is bright, it is indeed the case that
-other facilities might easily see the supernova.  But, even with a
-large neutrino signal, the optical signal from the CCSN could be quite
-dim.  This is a place where LSST will make a particularly vital
-contribution.  The explosion could fail or form a black
-hole~\cite{2011ApJ...730...70O, 2017hsn..book.1555O} or the supernova
-could be hidden in the dust of the galactic plane.  Recent work has
-estimated that a supernova located in the disk obscured by dust could
-be as dim as magnitude 25~\cite{2016MNRAS.461.3296N}.  The expected
-range of brightnesses are explored in~\cite{2016MNRAS.461.3296N},
+identification.  LSST's large 3.6 degree FOV is well matched to the
+initial search region that would be presented by \superk.  Depending
+on the size, either a single pointing or a tight pattern of dithering
+over a few degrees of the sky is all that will be necessary.  LSST can
+continually collect exposures in the region until the explosion is
+seen. Next is LSSTs depth. It is true that there are many wide field
+surveys that can try to identify the supernova.  If the supernova is
+bright, it is indeed the case that other facilities might easily see
+the supernova.  But, even with a large neutrino signal, the optical
+signal from the CCSN could be quite dim.  Recent work has estimated
+that a supernova located in the disk obscured by dust could be as dim
+as magnitude 25~\cite{2016MNRAS.461.3296N}.  This is a place where
+LSST will make a particularly vital contribution.  The explosion could
+fail or form a black hole~\cite{2011ApJ...730...70O,
+  2017hsn..book.1555O} or the supernova could be hidden in the dust of
+the galactic plane.  The expected range of brightnesses are explored
+in~\cite{2016MNRAS.461.3296N},
 figure~\ref{fig:multimessenger-comparison} taken from that paper shows
 the reach of LSST for the dimmest supernova compared to other
 facilities.
