@@ -78,7 +78,7 @@ Authors: \\
 \noindent
 Chris Walter - chris.walter@duke.edu \\
 Dan Scolnic - dan.scolnic@duke.edu \\
-Anze Slosar - anze@bnl.gov \\
+An\v{z}e Slosar - anze@bnl.gov \\
 
 \noindent
 Categorization: 
@@ -163,7 +163,7 @@ which does a blinded coincidence between automatic experimental alerts
 sending out an automated announcement to the GCN if more than one
 neutrino experiment has seen a burst of neutrinos.
 
-Some detectors only can report the time of a neutrino burst, and do
+Some detectors can only report the time of a neutrino burst, and do
 not have the ability to supply directional information.  In the near
 future, there will be new detectors with pointing ability and the
 SNEWS system will also add pointing information utilizing
@@ -242,7 +242,7 @@ receive a neutrino alarm. In that case we advocate for a strategy of a
 full day of observing with follow-up over next few days to ensure the
 candidate.  Depending on how bright it is, we would quickly hand off
 to other ground and space-based telescopes.  It would take
-approximately 0.3\% of the survey's time to contribute to a major
+approximately 0.03\% of the survey's time to contribute to a major
 discovery.
 
 \clearpage
@@ -508,14 +508,33 @@ observing day.  Schematically the sequence of events would be as follows:
 
 \begin{itemize}
 \item Receive neutrino alert
-\item Go into SN watch mode
-\item Choose exposure, filter and dither plan
-\item Begin a continuous exposure mode in the indicated region of the
-  sky attempting to reach limiting depth in the target region.
-\item Perform fast DIA analysis to locate CCSN candidate
-\item Pass information about the CCSN candidate to community to allow
-  other followup observations.
-\item Follow the light curve for the rest of the night of observation.
+\item Alert is immediately passed to relevant personnel on duty
+\item If the telescope is not observing (because it is day time or bad weather) or if the field is not currently visible, the relevant personnel can override the default strategy
+\item If the field is visible, or when it becomes visible, preempt all the other observing plans
+\item Note that if field rises hours after the first alter it might be possible that:
+\begin{itemize}
+    \item The object has already been identified with high certainty in which case the operator on duty my decide for forfeit the opportunity
+    \item The SN has already brightened, in which case ti will be discovered in the first image, assuming good templates exist.
+\end{itemize}
+
+
+\item Choose exposure, filter and dither plan:
+\begin{itemize}
+    \item Filter and exposure plans should be pre-determined in conjunction with relevant experts. We do not currently posses a recommendation
+    \item If the search region exceed the LSST pointing size, a dithering strategy covering 99\% of the area should be used.
+\end{itemize}
+
+\item Observe repeatedly in the region while continously performing DIA analysis:
+\begin{itemize}
+    \item For a very fast brightening transient, a difference with the last image is optimal
+    \item For slowly brightening transient, a difference between the average last $N$ images and the template is likely more optimal
+\end{itemize}
+\item If CCSN candidate are identified, pass this information to community and event brokers
+\item Follow the light curve for the rest of the night of observation. This serves several reasons:
+\begin{itemize}
+    \item It will help identify further candidates in case the first candidate was a mis-identification
+    \item It puts the full light-curve on the same calibration basis, facilitating cross-calibration with other instruments which will presumably be following up.
+\end{itemize}
 \end{itemize}
 
 \subsection{Footprint -- pointings, regions and/or constraints}
@@ -558,6 +577,9 @@ Edit after discussion:
 'I would try to do this at least three times that first night depending
 on how long that takes.  Then once the following night, and one more
 time a week later just to be sure there was nothing else.' 
+
+AS: There are other telescopes. If something is there, something will see it by the first day and something else will take spectra to confirm. I think the point is that we want to be ready on the first minute. What happens the day after should be left to people who can think factos over based on what they saw (or didn't) last night.
+
 
 \subsection{Filter choice}
 
