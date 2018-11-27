@@ -14,7 +14,7 @@
 
 \newcommand{\superk}  {Super\nobreakdash-K\xspace}
 
-\title{Target of Opportunity proposal for locating a core collapse
+\title{LSST Target of Opportunity proposal for locating a core collapse
   supernova in our galaxy triggered by a neutrino supernova alert}
 \author{ C.W. Walter, D. Scolnic, A. Slosar}
 \date{ November 2018}
@@ -158,7 +158,7 @@ A world-wide network of neutrino detectors including Super-Kamiokande
 world if a supernova neutrino burst has been seen.  Additionally, all
 of these experiments are networked together into a system known as
 SNEWS (the supernova early warning system; website and more
-information at \url{https://snews.bnl.gov}~\cite{2004NJPh....6..114A}
+information at \url{https://snews.bnl.gov})~\cite{2004NJPh....6..114A}
 which does a blinded coincidence between automatic experimental alerts
 sending out an automated announcement to the GCN if more than one
 neutrino experiment has seen a burst of neutrinos.
@@ -169,7 +169,8 @@ future, there will be new detectors with pointing ability and the
 SNEWS system will also add pointing information utilizing
 intra-detector timing by using the fact that travel times across the
 Earth from multiple detectors (such as \superk and IceCube) can
-triangulate the CCSN position.~\cite{Katepaper}.  However, currently,
+triangulate the CCSN position~\cite{2018JCAP...04..025B} and [N. Linzer
+and K. Scholberg in preparation].  However, currently,
 \superk is the only running experiment with pointing ability, and we
 use its performance for this proposal. Most of the neutrino
 interactions in the water of the \superk experiment are inverse beta
@@ -224,6 +225,15 @@ figure~\ref{fig:multimessenger-comparison} taken from that paper shows
 the reach of LSST for the dimmest supernova compared to other
 facilities.
 
+Finally, to quickly identify the CCSN, in the case that we do not
+acquire images after the alert but before the optical light arrives,
+deep image templates of the area will be necessary for image
+subtraction and candidate identification.  Likely the depth of these
+templates will be the main limiting factor for identifying faint
+candidates.  LSST should have templates across the sky after Y1.  The
+depth $\times$ area on average across the sky will be deeper for LSST
+than any other survey.
+
 Identifying and studying a galactic supernova would be a scientific
 gold-mine for astronomy and particle physics.  The merit of enabling
 these studies are very high. The impact on running is minimal.  Using
@@ -264,21 +274,24 @@ discovery.
 
 \newpage
 \section{Technical Description}
-\begin{footnotesize}
-{\it Describe your survey strategy modifications or proposed observations. Please comment on each observing constraint
-below, including the technical motivation behind any constraints. Where relevant, indicate
-if the constraint applies to all requested observations or a specific subset. Please note which 
-constraints are not relevant or important for your science goals.}
-\end{footnotesize}
 
 In order to describe the survey strategy for footprint, tiling method,
 depth, and observation frequency it is important to understand the
-expected time delay and pointing signal and the form of the alarm signal.
+expected time delay and pointing signal and the form of the alarm
+signal.  Those are first summarized here.
 
 \subsection{Expected Time Delay}
 
-minutes WR - hours blue giant - ~day for red supergiant. Fill in with
-info and link to paper / figure~\ref{fig:delay-times}.
+The time delay between the neutrino alarm and the light signal
+reaching LSST can range from minutes in the case of Wolf-Rayet stars,
+to hours for blue supergiants, all the way up to a day or more for red
+supergiants.  The time is set by the radius of the star when the
+collapse happens, as that sets the distance that the shock wave must
+travel.  Figure~\ref{fig:delay-times} taken
+from~\cite{2013ApJ...778...81K} shows how the breakout time of the
+shockwave varies for different classes of stellar objects. Table~2
+in~\cite{2015ApJ...814...63M}  calculates the delay times for various
+modeled red supergiants.
 
 \subsection{Expected pointing resolution}
 
@@ -335,21 +348,20 @@ private plot from Nakahata...]
 
 \subsection{Alert input}
 
-In order to point LSST, the observatory control system (OCS) must first
-receive information from the neutrino experiments that a light from a
-galactic supernova is about to arrive.  Time is of the essence since
-depending on the size and type of the star the breakout time could
-range from minutes to several hours~\cite{2013ApJ...778...81K}.  There
-currently more than one way to receive an alert. If selected LSST must
-work with the neutrino community to ensure that the proper information
-that LSST needs is being promptly transferred.
+In order to point LSST, the observatory control system (OCS) must
+first receive information from the neutrino experiments that a light
+from a galactic supernova is about to arrive.  Time is of the essence
+since depending on the size and type of the star the breakout time
+could range from minutes to many hours~\cite{2013ApJ...778...81K}.
+There is currently more than one way to receive an alert. If selected
+LSST must work with the neutrino community to ensure that the
+information that LSST needs is being promptly transferred.
 
 There are two broad classes of alerts to consider.  Each experiment
 has the option to send its own alert to the astronomical community.
 For example, if \superk determines a CCSN in our galaxy has occurred
 it might send the following template like text to the Astronomers
 Telegram:
-
 
 \begin{verbatim}
 Super-Kamiokande, a 50000 ton water Cherenkov imaging detector
@@ -369,13 +381,13 @@ of the central position is 0.36, 0.92 and 1.00, respectively.
 \end{verbatim}
 
 C.W. Walter is a member of both \superk and the LSST project and
-the \superk spokesperson has expressed interest in personal
-conversation to supply direct information to the LSST OCS in whatever
-form is most appropriate.
+\superk has expressed interest (in personal communications) to CWW in
+supplying direct information to the LSST OCS in whatever form is most
+appropriate.
 
 For many years the neutrino community as a whole has being preparing
 for a galactic supernova through the creation of the Supernova Early
-Warning System (SNEWS) SNEWS acts as a
+Warning System (SNEWS).  SNEWS acts as a
 broker and a blinded system to look for coincidences in time between
 supernova alarms coming from different neutrino experiments. If one is
 seen, then they alert the entire astronomical community through several
@@ -482,183 +494,126 @@ However, it is recognized that this step slows down dissemination, so
 discussion is starting on the best way to pass this information either
 directly to projects like LSST or through systems like SNEWS.
 
-LSST could decide to require multiple or single experimental alarms
+LSST could decide to require multiple or single experimental alarms,
 still taking the pointing system from \superk.  In the future, SNEWS
 is also expected to supply pointing based on triangulation using
 timing and this information could be combined with the electron
 scattering signal.
 
 \subsection{High-level description}
-\begin{footnotesize}
-{\it Describe or illustrate your ideal sequence of observations.}
-\end{footnotesize}
 
-\vspace{.3in}
-
-
-Describe sequence here:
+We propose a new ``Supernova watch mode'' that would be triggered by a
+neutrino supernova alert and would stay engaged for the rest of the
+observing day.  Schematically the sequence of events would be as follows:
 
 \begin{itemize}
-\item Receive alert
+\item Receive neutrino alert
 \item Go into SN watch mode
-\item choose exposure, filter and dither pattern
+\item Choose exposure, filter and dither plan
+\item Begin a continuous exposure mode in the indicated region of the
+  sky attempting to reach limiting depth in the target region.
 \item Perform fast DIA analysis to locate CCSN candidate
-\item Pass information about the CCSN candidate to community o allow
+\item Pass information about the CCSN candidate to community to allow
   other followup observations.
-\item Follow for some time for the rest of the night of observation.
+\item Follow the light curve for the rest of the night of observation.
 \end{itemize}
 
 \subsection{Footprint -- pointings, regions and/or constraints}
-\begin{footnotesize}{\it Describe the specific pointings or general region (RA/Dec, Galactic longitude/latitude or 
-Ecliptic longitude/latitude) for the observations. Please describe any additional requirements, especially if there
-are no specific constraints on the pointings (e.g. stellar density, galactic dust extinction).}
-\end{footnotesize}
 
-Depending on the pointing resolution the OCS would either point the
-telescope at one point in the sky taking a continuous set of
-exposures, or likely put it in a tight dither pattern covering a few
-FOVs worth of area.
+LSST can expect to receive an indicted region of the sky with a target
+RA and Dec and (for example) and a half angle opening region with a
+68\% coverage.  We advocate covering 99\% of the
+localization area with a strategy of first going for maximum coverage
+with a single pointing and then covering the rest of the region with
+overlap on that central pointing to add depth.  The distance and
+luminosity of the CCSN could result in pointing resolution ranging 
+from 1 to several degrees on the sky with a typical 10~kpc supernova
+being localized to about a 6 degrees FOV.
 
 \subsection{Image quality}
-\begin{footnotesize}{\it Constraints on the image quality (seeing).}\end{footnotesize}
 
-The image quality is not relevant.
+The image quality is not relevant.  Exposures should be taken if at all possible.
 
 \subsection{Individual image depth and/or sky brightness}
-\begin{footnotesize}{\it Constraints on the sky brightness in each image and/or individual image depth for point sources.
-Please differentiate between motivation for a desired sky brightness or individual image depth (as 
-calculated for point sources). Please provide sky brightness or image depth constraints per filter.}
-\end{footnotesize}
 
-Not relevant.
+Single visits have a depth of 23.14,  24.54, 24.20, 23.65, 22.77,
+21.92 in ugrizy.  We advocate attempting to reach magnitude 26 until
+the optical counterpart is seen.
 
 \subsection{Co-added image depth and/or total number of visits}
-\begin{footnotesize}{\it  Constraints on the total co-added depth and/or total number of visits.
-Please differentiate between motivations for a given co-added depth and total number of visits. 
-Please provide desired co-added depth and/or total number of visits per filter, if relevant.}
-\end{footnotesize}
 
-Not relevant (?).  Should we try to build a co-add?
+In order to reach magnitude 26 we would need XXXX visits in ugrizy.
+
+(calculate using 2.5*log10(sqrt(visits)) to get to depth you want (e.g. 26th magnitude))
 
 \subsection{Number of visits within a night}
-\begin{footnotesize}{\it Constraints on the number of exposures (or visits) in a night, especially if considering sequences of visits.  }
-\end{footnotesize}
 
 This mode would be envisioned to completely take over the facility for
 one dark period after the alarm arrives.
 
 \subsection{Distribution of visits over time}
-\begin{footnotesize}{\it Constraints on the timing of visits --- within a night, between nights, between seasons or
-between years (which could be relevant for rolling cadence choices in the WideFastDeep. 
-Please describe optimum visit timing as well as acceptable limits on visit timing, and options in
-case of missed visits (due to weather, etc.). If this timing should include particular sequences
-of filters, please describe.}
-\end{footnotesize}
 
-Note relevant.
+Edit after discussion:
+
+'I would try to do this at least three times that first night depending
+on how long that takes.  Then once the following night, and one more
+time a week later just to be sure there was nothing else.' 
 
 \subsection{Filter choice}
-\begin{footnotesize}
-{\it Please describe any filter constraints not included above.}
-\end{footnotesize}
 
-Peak height vs NIR for seeing through dust. Need to look at light
-curves and throughput.
+We suggest attempting uniform depth in griz in order to make sure we
+cover faint and reddened objects.
 
 \subsection{Exposure constraints}
-\begin{footnotesize}
-{\it Describe any constraints on the minimum or maximum exposure time per visit required (or alternatively, saturation limits).
-Please comment on any constraints on the number of exposures in a visit.}
-\end{footnotesize}
 
-Dynamic exposure? What happens if it is too bright?
-
+In Figure 7 of~\cite{2016MNRAS.461.3296N} Nakumura and all show that
+the extincted optical signal in the visible for a galactic center CCSN
+could range from magnitude 5 to 26. The apparent magnitude of the
+light curve is a strong function of galactic position (shown in Figure
+8) of the same paper.  A dynamic exposure scheme were the exposure is
+shortened in positions of little extinction could be considered.
 
 \subsection{Other constraints}
-\begin{footnotesize}
-{\it Any other constraints.}
-\end{footnotesize}
+
+No other relevant constraints.  Clearly the target CCSN would need to be
+visible to LSST to enter a supernova watch mode.  Depending on the
+time of day, and time delay we might enter watch mode as soon as it
+become dark.
 
 \subsection{Estimated time requirement}
-\begin{footnotesize}
-{\it Approximate total time requested for these observations, using the guidelines available at \url{https://github.com/lsst-pst/survey_strategy_wp}.}
-\end{footnotesize}
 
 We expect no more than one night in the 10 year survey would be
 affected by this program. With an expected rate of 3 per century there
 is a 22\% chance one CCSN would be seen and a 3\% chance there could
 be two.
 
-\vspace{.3in}
-
-\begin{table}[ht]
-    \centering
-    \begin{tabular}{l|l|l|l}
-        \toprule
-        Properties & Importance \hspace{.3in} \\
-        \midrule
-        Image quality &     \\
-        Sky brightness &  \\
-        Individual image depth &   \\
-        Co-added image depth &   \\
-        Number of exposures in a visit   &   \\
-        Number of visits (in a night)  &   \\ 
-        Total number of visits &   \\
-        Time between visits (in a night) &  \\
-        Time between visits (between nights)  &   \\
-        Long-term gaps between visits & \\
-        Other (please add other constraints as needed) & \\
-        \bottomrule
-    \end{tabular}
-    \caption{{\bf Constraint Rankings:} Summary of the relative importance of various survey strategy constraints. Please rank the importance of each of these considerations, from 1=very important, 2=somewhat important, 3=not important. If a given constraint depends on other parameters in the table, but these other parameters are not important in themselves, please only mark the final constraint as important. For example, individual image depth depends on image quality, sky brightness, and number of exposures in a visit; if your science depends on the individual image depth but not directly on the other parameters, individual image depth would be `1' and the other parameters could be marked as `3', giving us the most flexibility when determining the composition of a visit, for example.}
-        \label{tab:obs_constraints}
-\end{table}
-
 \subsection{Technical trades}
-\begin{footnotesize}
-{\it To aid in attempts to combine this proposed survey modification with others, please address the following questions:
-\begin{enumerate}
-    \item What is the effect of a trade-off between your requested survey footprint (area) and requested co-added depth or number of visits?
-    \item If not requesting a specific timing of visits, what is the effect of a trade-off between the uniformity of observations and the frequency of observations in time? e.g. a `rolling cadence' increases the frequency of visits during a short time period at the cost of fewer visits the rest of the time, making the overall sampling less uniform.
-    \item What is the effect of a trade-off on the exposure time and number of visits (e.g. increasing the individual image depth but decreasing the overall number of visits)?
-    \item What is the effect of a trade-off between uniformity in number of visits and co-added depth? Is there any benefit to real-time exposure time optimization to obtain nearly constant single-visit limiting depth?
-    \item Are there any other potential trade-offs to consider when attempting to balance this proposal with others which may have similar but slightly different requests?
-\end{enumerate}}
-\end{footnotesize}
 
-Not relevant.
+Not relevant for this proposal.
 
 \section{Performance Evaluation}
-\begin{footnotesize}
-{\it Please describe how to evaluate the performance of a given survey in achieving your desired
-science goals, ideally as a heuristic tied directly to the observing strategy (e.g. number of visits obtained
-within a window of time with a specified set of filters) with a clear link to the resulting effect on science.
-More complex metrics which more directly evaluate science output (e.g. number of eclipsing binaries successfully
-identified as a result of a given survey) are also encouraged, preferably as a secondary metric.
-If possible, provide threshold values for these metrics at which point your proposed science would be unsuccessful 
-and where it reaches an ideal goal, or explain why this is not possible to quantify. While not necessary, 
-if you have already transformed this into a MAF metric, please add a link to the code (or a PR to 
-\href{https://github.com/lsst-nonproject/sims_maf_contrib}{sims\_maf\_contrib}) in addition to the text description. (Limit: 2 pages).}
-\end{footnotesize}
 
-Not relevant.  Performance would be measured in successfully
+Not relevant for this proposal.  Performance would be measured in successfully
 identifying and quickly notifying the community of the location of the
-optical supernova counterpart.
-
-
-\vspace{.6in}
+of the supernova.
 
 \section{Special Data Processing}
-\begin{footnotesize}
-{\it Describe any data processing requirements beyond the standard LSST Data Management pipelines and how these will be achieved.}
-\end{footnotesize}
 
 A version of the DIA pipeline would need to be utilized to make the
-initial identification.
+initial identification.  As one of the advantages of leveraging LSST
+for this work is it's ability to see CCSN which have been obscured by
+dust in the galactic plane, we also advocate building a set of
+templates in the galactic plane to use if the neutrino signal points
+us to that region of the sky.
 
 \section{Acknowledgments}
 
-Evan and Kate. DOE grants?
+The authors would like to thank Kate Scholberg of Duke University for
+information on the SNEWS system and general information, Evan O'Connor
+of the University of Stockholm for very useful information and
+references related to the modeling of CCSN and properties of the
+progenitor stars and light curves, and Super-Kamiokande Spokesperson
+Masayuki Nakahata for information on Super-K performance and plans.
 
 \section{References}
 % Shared ADS library: https://ui.adsabs.harvard.edu/#/public-libraries/tD3_JEzETqaCHFp83Dk74g
