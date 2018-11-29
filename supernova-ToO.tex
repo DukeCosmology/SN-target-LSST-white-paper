@@ -528,7 +528,7 @@ observing day.  Schematically the sequence of events would be as follows:
 \item Receive neutrino alert
 \item Alert is immediately passed to relevant personnel on duty
 \item If the telescope is not observing (because it is day time or bad
-  weather) or if the field is not currently visible, the relevant
+  weather), if the field is not currently visible, or if the candidate position is too near the Sun at all times, the relevant
   personnel can override the default strategy
 \item If the field is visible, or when it becomes visible, preempt all
   the other observing plans
@@ -541,6 +541,8 @@ observing day.  Schematically the sequence of events would be as follows:
     discovered in the first image, assuming good templates exist.
 \end{itemize}
 
+\item Verify up-to-date deep templates have been built and are accessible for that sky area in all filters.  If there are no recent deep templates available, the continuous exposures taken during the period wanting for the optical signal should be used to build one.  In this case, the sensitivity will increase the longer the time between the neutrino and optical signal.
+
 \item Choose exposure, filter and dither plan:
 \begin{itemize}
 \item Filter and exposure plans should be pre-determined in
@@ -550,11 +552,12 @@ observing day.  Schematically the sequence of events would be as follows:
   strategy covering 99\% of the area should be used.
 \end{itemize}
 
-\item Observe repeatedly in the region while continously performing DIA analysis:
+\item Observe repeatedly in the region while continuously performing DIA analysis with the template for each short group of exposures and for the stacked nightly visit total at that time
 \begin{itemize}
-    \item For a very fast brightening transient, a difference with the last image is optimal
-    \item For slowly brightening transient, a difference between the
-      average last $N$ images and the template is likely more optimal.
+    %\item For a very fast brightening transient, a difference with the last image is optimal
+    %\item For slowly brightening transient, a difference between the
+      %average last $N$ images and the template is likely more optimal.
+      
 \end{itemize}
 \item If CCSN candidates are identified, pass this information to
   community and event brokers
@@ -578,7 +581,7 @@ observing day.  Schematically the sequence of events would be as follows:
 
 \subsection{Footprint -- pointings, regions and/or constraints}
 
-LSST can expect to receive an indicted region of the sky with a target
+LSST can expect to receive an indicated region of the sky with a target
 RA and Dec and (for example) and a half angle opening region with a
 68\% coverage.  We advocate covering 99\% of the localization area
 with a strategy of dithered sampling based on the prior given by the
@@ -596,12 +599,14 @@ The image quality is not relevant.  Exposures should be taken if at all possible
 Single visits have a depth of 23.14,  24.54, 24.20, 23.65, 22.77,
 21.92 in ugrizy.  Whether single exposures and differences are
 effective in seeing the transient will depend on the optical brightness.
+Trade offs in allocation of filter time are likely galactic coordinate dependent as they depend on dust, and an optimal strategy will require further study.
+
+We suggest attempting uniform depth in grizy in order to make sure
+faint and reddened objects are well covered.
 
 \subsection{Co-added image depth and/or total number of visits}
 
-Building a co-addition and comparing with a template may be necessary
-for particular dim CCSN.  We advocate attempting to reach magnitude 26
-to cover the expected range.
+As this proposal covers a single night, final multi-year co-added depths are not relevant.
 
 \subsection{Number of visits within a night}
 
@@ -618,8 +623,7 @@ the observed CCSN and the perceived need for LSST followup.
 
 \subsection{Filter choice}
 
-We suggest attempting uniform depth in griz in order to make sure
-faint and reddened objects are well covered.
+As the CCSN may be located in a high dust region, we prefer that the filter wheel contain the griz and y filters as the y filter may be particularly useful in that case.
 
 \subsection{Exposure constraints}
 
