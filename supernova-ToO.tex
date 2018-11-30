@@ -98,11 +98,11 @@ Categorization:
 \label{sec:motivation}
 
 No visible galactic CCSNe have been seen and measured in the modern
-scientific era. It is thought that CCSNe occur roughly two or three
-times a century~\cite{1994ApJS...92..487T, 2001ASSL..264..199C}.  The
-closest modern CCSN we have observed was SN~1987A in the LMC.  Using an
-alarm from neutrino detectors as a trigger, LSST can quickly identify
-and characterize a galactic CCSN and then notify the rest of the
+scientific era. They are only thought to occur two or three times a
+century~\cite{1994ApJS...92..487T, 2001ASSL..264..199C}.  The closest
+modern CCSN we have observed was SN~1987A in the LMC.  Using an alarm
+from neutrino detectors as a trigger, LSST can quickly identify and
+characterize a galactic CCSN and then notify the rest of the
 astronomical community which can then track it in multiple wavelengths
 from the ground and space.  The early identification of the supernova
 optical counterpart will be key in an extensive program of
@@ -124,10 +124,10 @@ ultimate fate of the star is determined by a battle between the
 accreting matter and the intense outward pressures from heat,
 neutrinos, and turbulence. If the former wins, a black hole is formed,
 if the latter wins, the supernova shock drives out into the star
-starting an explosion.  Depending on the size of the star, only minutes to many
-hours later will the shock wave actually break out of the stellar
-envelope and become visible as a supernova explosion to optical
-telescopes.
+starting an explosion.  Depending on the size of the star, only
+minutes to many hours later will the shock wave actually break out of
+the stellar envelope and become visible as a supernova explosion to
+optical telescopes.
 
 Studying a galactic supernova in detail is an amazing opportunity to
 do multi-messenger astronomy~\cite{2016MNRAS.461.3296N}.  Neutrino,
@@ -158,51 +158,36 @@ the neutrino and gravitational wave signal.
  
 A world-wide network of neutrino detectors including Super-Kamiokande
 (\superk)~\cite{2003NIMPA.501..418F} have prompt alarms to alert the
-world if a supernova neutrino burst has been seen.  Additionally, all
-of these experiments are networked together into a system known as
-SNEWS (the supernova early warning system; website and more
-information at \url{https://snews.bnl.gov})~\cite{2004NJPh....6..114A}
-which does a blinded coincidence between automatic experimental alerts
-sending out an automated announcement to the GCN if more than one
-neutrino experiment has seen a burst of neutrinos. SNEWS is also
-capable of sending a tagged individual confirmed alert from a single
-experiment.
-
-Some detectors can only report the time and size of a neutrino burst,
-and do not have the ability to supply directional information.  In the
-near future, there will be new detectors with pointing ability and the
-SNEWS system will also add pointing information utilizing
-intra-detector timing by using the fact that travel times across the
-Earth from multiple detectors (such as \superk and IceCube) can
-triangulate the CCSN position~\cite{2018JCAP...04..025B} and
-[N. Linzer and K. Scholberg in preparation].  However, currently,
+world if a supernova neutrino burst has been seen. All of these
+experiments are also networked together into a system known as SNEWS
+(The Supernova Early Warning System; website and more information at
+\url{https://snews.bnl.gov})~\cite{2004NJPh....6..114A}. SNEWS does a
+blinded coincidence between experimental alerts sending out an
+automated announcement to the GCN if more than one neutrino experiment
+has seen a burst of neutrinos, and is also capable of sending a
+individual confirmed alerts from a single experiment.  Currently,
 \superk is the only running experiment with pointing ability, and we
-use its performance for this proposal.  Most of the neutrino
-interactions in the water of the \superk experiment are inverse beta
-decay (IBD) ($ \overline{\nu}_{e}+ p \rightarrow e^{+} + n $) where a
-neutrino is captured by a proton resulting in a positron (which is
-detected through its Cherenkov radiation) and a neutron.  The positron
-in this reaction carries only very weak directional memory of the
-incoming neutrino. However, a few percent of the neutrino interactions
-proceed through atomic electron scattering:
-$\nu + e^{-} \rightarrow \nu + e^{-} .$
+concentrate on its performance for this proposal.  The neutrino
+interactions inside of \superk from a CCSN consist of inverse beta
+decay (IBD) interactions on nuclei with only weak directional memory
+and also scattering on atomic electrons which point to their source
+quite well.
 
-Unlike the IBD reactions, these atomic electron scattering
-interactions {\bf do} point back to the supernova well.  For a more
-detailed description of the expected fluxes from each neutrino type
-and neutrino interactions expected in detector refer to the
-review~\cite{2012ARNPS..62...81S}.
+For a more detailed description of the expected fluxes from each
+neutrino type and neutrino interactions expected in detector refer to
+the review~\cite{2012ARNPS..62...81S} and
+section~\ref{sec:interactions} below.
 Figure~\ref{fig:SK-realtime-monitor-pointing} taken
-from~\cite{2016APh....81...39A} shows a typical example set of
+from~\cite{2016APh....81...39A} shows a simulated example of
 interactions from a supernova near the galactic center with its
-direction reconstructed.  In this figure, the electron scattering
+direction reconstructed.  In the figure, the electron scattering
 interactions are in red, the IBD interactions in blue.  The fluxes
-(and resulting pointings) are somewhat model dependent but studies
-have shown that for a CCSN located 10~kpc away it is possible to
-determine the direction of the star to within about 3-5
+(and resulting pointings) are model dependent, but studies have shown
+that for a CCSN located 10~kpc away it is possible to determine the
+direction of the star to within about 3-5
 degrees~\cite{2016APh....81...39A}.  Closer or more luminous CCSNe
 will have better pointing.  The expected time delay ranges from
-minutes to a day depending on the mass of the progenitor
+minutes to more than a day depending on the mass of the progenitor
 star. Figure~\ref{fig:delay-times} taken
 from~\cite{2013ApJ...778...81K} shows the range of expected times.
 The SN~1987A progenitor was thought to be a blue giant with a time
@@ -210,33 +195,31 @@ delay of around 3 hours.
 
 LSST is particularly well suited to do the initial CCSN
 identification.  LSST's large 3.6 degree FOV is well matched to the
-initial search region that would be presented by \superk.  Depending
-on the size, either a single pointing or a tight pattern of dithering
-over a few degrees of the sky is all that will be necessary.  LSST can
-continually collect exposures in the region until the explosion is
-seen. Next is LSST's depth. It is true that there are many wide field
-surveys that can try to identify the supernova.  If the supernova is
-bright, it is indeed the case that other facilities might easily see
-the supernova.  But, even with a large neutrino signal, the optical
-signal from the CCSN could be quite dim.  This is a place where LSST
-will make a particularly vital contribution.  Recent work has
-estimated that a supernova located in the disk obscured by dust could
-be as dim as magnitude 25~\cite{2016MNRAS.461.3296N}.  The explosion
-could also  fail or form a black hole~\cite{2011ApJ...730...70O,
+initial search region that would come from \superk.
+%Depending
+%on the size, either a single pointing or a tight pattern of dithering
+%over a few degrees of the sky is all that will be necessary.
+LSST can continually collect exposures in the region until the
+explosion is seen. Next is LSST's depth.  There are other wide-field
+surveys that might easily see the supernova if it is bright.  But,
+even with a large neutrino signal, the optical signal from the CCSN
+could be quite dim.  This is a place where LSST will make a
+particularly vital contribution.  Recent work has estimated that a
+supernova located in the disk obscured by dust could be as dim as
+magnitude 25~\cite{2016MNRAS.461.3296N}.  The explosion could also
+fail or form a black hole~\cite{2011ApJ...730...70O,
   2017hsn..book.1555O}.  The expected range of brightnesses are
 explored in~\cite{2016MNRAS.461.3296N},
 figure~\ref{fig:multimessenger-comparison} taken from that paper shows
 the reach of LSST for the dimmest supernova compared to other
 facilities.
 
-Finally, to quickly identify the CCSN, in the case that we do not
-acquire images after the alert but before the optical light arrives,
-deep image templates of the area will be necessary for image
-subtraction and candidate identification.  Likely the depth of these
-templates will be the main limiting factor for identifying faint
-candidates.  LSST should have templates across the sky after Y1.  The
-depth $\times$ area on average across the sky will be deeper for LSST
-than any other survey.
+Finally, to quickly identify the CCSN, deep image templates of the
+area will be necessary for image subtraction and candidate
+identification.  Likely the depth of these templates will be the main
+limiting factor for identifying faint candidates.  LSST should have
+templates across the sky after Y1.  The depth $\times$ area on average
+across the sky will be deeper for LSST than any other survey.
 
 Identifying and studying a galactic supernova would be a scientific
 gold-mine for astronomy and particle physics.  The merit of enabling
@@ -249,12 +232,12 @@ to other ground and space-based telescopes.  It would take
 approximately 0.03\% of the survey's time to contribute to a major
 discovery.
 
-\clearpage
+\newpage
 
 \begin{figure}
   \begin{center}
-    \includegraphics[width=4.0in]{SK-realtime-monitor-pointing}
-    \caption{Caption... replace with real figure and no screen grab.}
+    \includegraphics[width=4.0in]{skymap}
+    \caption{Caption... write real caption with ref to paper.}
     \label{fig:SK-realtime-monitor-pointing}
   \end{center}
 \end{figure}
@@ -282,39 +265,78 @@ discovery.
 
 In order to describe the survey strategy for footprint, tiling method,
 depth, and observation frequency it is important to understand the
-expected time delay and pointing signal and the form of the alarm
+expected time delay and pointing signal along with the form of the alarm
 signal.  Those are first summarized here.
 
 \subsection{Expected Time Delay}
 
 The time delay between the neutrino alarm and the light signal
 reaching LSST can range from minutes in the case of Wolf-Rayet stars,
-to hours for blue supergiants, all the way up to a day or more for red
-supergiants.  The time is set by the radius of the star when the
-collapse happens, as that sets the distance that the shock wave must
-travel.  Figure~\ref{fig:delay-times} taken
+to hours for blue supergiants, all the way up to a day or two for the
+largest red supergiants.  The time is set by the radius of the star
+when the collapse happens, as that sets the distance that the shock
+wave must travel.  Figure~\ref{fig:delay-times} taken
 from~\cite{2013ApJ...778...81K} shows how the breakout time of the
 shockwave varies for different classes of stellar objects. Table~2
-in~\cite{2015ApJ...814...63M}  calculates the delay times for various
-modeled red supergiants.
+in~\cite{2015ApJ...814...63M} calculates the delay times for various
+modeled red supergiants.  Fractions of CCSN classification taken
+from~\cite{2017PASP..129e4201S} suggest that Wolf-Rayet stars will have
+a delay of 1 to 10 minutes and are approximately 30\% of CCSN, Blue
+Supergiants a few hours and 15\%, and Red Supergiants one to two days 
+and 55\%.
 
-\subsection{Expected pointing resolution}
+\subsection{Neutrino Interactions}
+\label{sec:interactions}
 
 The expected pointing resolution in a water Cherenkov detector will
 scale with the number of interactions detected.  As explained in
-section~\ref{sec:motivation} a set of electron scattering interactions which
-point back to the supernova will be sitting on top of a background of
-poorly-pointing interactions from the IBD neutrino captures.
+section~\ref{sec:motivation} a set of electron scattering interactions
+which point back to the supernova will be sitting on top of a
+background of poorly-pointing interactions from the IBD neutrino
+captures. For a supernova located 10~kpc from the Earth (the galactic
+center is approximately 8~kpc away) the order of 10,000 neutrino
+interactions are expected in \superk.  Supernova that are closer or
+further away will have their fluxes scaled simply by scaling to their
+distance with a factor of $1/r^2$.  Although something like 10,000
+interactions are typical, expected fluxes are found to have a range of
+values by different simulation groups.
 
-For a supernova located 10~kpc from the Earth (the galactic center is
-approximately 8~kpc away) the order of 10,000 neutrino interactions are
-expected in \superk.  Supernova that are closer or further away will
-have their fluxes scaled simply by scaling to their distance with a
-factor of $1/r^2$.  Although something like 10,000 interactions are
-typical, expected fluxes are found to have a range of values by
-different simulation groups.  Given a number of interactions, pointing
-to the supernova given by the kinematics of the electron scattering
-signal only is found to give a resolution of roughly
+Some detectors can only report the time and size of a neutrino burst,
+and do not have the ability to supply directional information.  In the
+near future, there will be new detectors with pointing ability and the
+SNEWS system will also add pointing information utilizing
+intra-detector timing by using the fact that travel times across the
+Earth from multiple detectors (such as \superk and IceCube) can
+triangulate the CCSN position~\cite{2018JCAP...04..025B} and
+[N. Linzer and K. Scholberg in preparation].  However, currently,
+\superk is the only running experiment with pointing ability, and we
+use its performance for this proposal.
+
+Most of the neutrino interactions in the water of the \superk
+experiment are inverse beta decay (IBD)
+%
+$$ \overline{\nu}_{e}+ p \rightarrow e^{+} + n , $$
+%
+where a neutrino is
+captured by a proton resulting in a positron (which is detected
+through its Cherenkov radiation) and a neutron.  The positron in this
+reaction carries only very weak directional memory of the incoming
+neutrino. However, a few percent of the neutrino interactions proceed
+through atomic electron scattering:
+%
+$$\nu + e^{-} \rightarrow \nu + e^{-} .$$
+%
+Unlike the IBD reactions,
+these atomic electron scattering interactions {\bf do} point back to
+the supernova well.  In order to find the direction of the CCSN a fit
+is done to the two components of the signal resulting in an inferred
+position and error region on the sky for the supernova position.
+
+\subsection{Expected pointing resolution}
+
+Given a number of interactions, pointing to the supernova using the
+electron scattering signal only given is by the kinematics of the
+interaction and is found to give a resolution of roughly
 %
 $$ \Delta \theta = \frac{30^\circ}{\sqrt{N}.}, $$
 %
@@ -347,7 +369,7 @@ resolution.
 
 \begin{figure}
   \begin{center}
-    \includegraphics[width=4.0in]{SK-realtime-pointing-resolution}
+    \includegraphics[width=4.0in]{dtheta_dist_wilson_all}
     \caption{Caption: write real caption with ref to paper}
     \label{fig:SK-realtime-pointing-resolution}
   \end{center}
@@ -447,6 +469,8 @@ COMMENTS:
 
 \noindent
 and email alerts such as the template below.
+
+\clearpage
 
 \begin{verbatim}
 -----BEGIN PGP SIGNED MESSAGE-----
@@ -606,7 +630,7 @@ the observed CCSN and the perceived need for LSST followup.
 
 \subsection{Filter choice}
 
-As the CCSN may be located in a high dust region, we prefer that the filter wheel contain the griz and y filters as the y filter may be particularly useful in that case.
+As the CCSN may be located in a high dust region, we prefer that the filter wheel contain the griz and y filters, as the y filter may be particularly useful in that case.
 
 \subsection{Exposure constraints}
 
