@@ -1,0 +1,60 @@
+Notes on permissions for figure reproduction:
+
+Figure 1 and 4:
+
+https://ui.adsabs.harvard.edu/#abs/2016APh....81...39A/abstract
+
+Real-time supernova neutrino burst monitor at Super-Kamiokande
+
+Astroparticle Physics, Volume 81, p. 39-48.
+
+(C.W. Walter is author; allowed for this reason but also see below)
+
+From:
+https://www.elsevier.com/__data/assets/pdf_file/0007/55654/AuthorUserRights.pdf
+
+:Short quotes and reproduction of material from articles
+Anyone may in written work quote from an article published by Elsevier, as long as the quote comprises only a short excerpt such as one or two sentences. An appropriate citation, including the journal title, must be provided.
+    
+If the intended use is for scholarly content, noncommercial research or educational purposes, an institution or academic may, without seeking permission from Elsevier, use:
+- a single text extract of fewer than 100 words or a series of extracts totaling no more than 300 words
+- a maximum of 2 figures from a journal article or a total of 5 from a journal volume
+"
+
+------
+Figure 2:
+
+https://ui.adsabs.harvard.edu/#abs/2013ApJ...778...81K/abstract
+
+Tomography of Massive Stars from Core Collapse to Supernova Shock
+Breakout
+ 
+The Astrophysical Journal, Volume 778, Issue 1, article id. 81, 9
+pp. (2013).
+
+AAS grants permission after getting permission from authors. You write
+to permissions@iop.org. I got permission from them and Wick Haxton.
+They responded in email.  See email for details. I added "©
+AAS. Reproduced with permission", to figure two's caption as requested.
+
+------------
+Figure 3:
+
+https://ui.adsabs.harvard.edu/#abs/2016MNRAS.461.3296N/abstract
+
+Multimessenger signals of long-term core-collapse supernova
+simulations: synergetic observation strategies
+
+Monthly Notices of the Royal Astronomical Society, Volume 461, Issue
+3, p.3296-3313
+
+"Requests to Reuse Figures
+
+You are not required to obtain permission to reuse figures (including tables) for academic, educational or non-commercial research for the following material provided full acknowledgment is given to the original source including Figure Number, Title of the Article, Author, Journal Title and Volume or Issue.
+
+Post 1998: a maximum of two figures (including tables) from a journal article or five figures per journal issue (unless a separate copyright holder is identified in such figure, in which event permission should be sought from that holder).
+
+Pre 1998: a maximum of five figures (including tables) per journal
+article.
+"
+-----
